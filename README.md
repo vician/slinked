@@ -24,6 +24,7 @@ Configuration files can contain comments - begging with char # in the begging of
 See example file `slinked.sh.sln`.
 
 ## Usage:
+```
 usage: slinked.sh [-l link_type] [-d] [-f] [-t] [-h] [-r]
   -l link_type Set link_type as default type of linking instead of standard symlinking
   -d debuging mode
@@ -31,6 +32,7 @@ usage: slinked.sh [-l link_type] [-d] [-f] [-t] [-h] [-r]
   -t testing mode
   -r restore the origin files
   -h print help
+```
 
 @todo
 - global configuration for linking in one file
