@@ -1,0 +1,7 @@
+# Example comment
+# slinked.sh will be symlinked into slinked2.sh in the same directory only on computer with hostname computer1
+./slinked2.sh|h=computer1
+# This will create hardlink slinked3.sh for file slinked.sh
+./slinked3.sh|t=l
+# This will copy file slinked.sh into slinked4.sh
+./slinked4.sh
