@@ -13,11 +13,24 @@ Where `/path/to/target/file` is the target of linking.
 Optional parameter h define hostname where (and only where) the rule are applied.
 
 Optional parameter t define type of "linking" where
-- s is symbolic link
-- l is hard link
+- s is symbolic link (default option)
+- l is hard link (applied only on files)
 - c is manual copy
 
 Multiple "target lines" are allowed.
+
+Configuration files can contain comments - begging with char # in the begging of the comment line.
+
+See example file `slinked.sh.sln`.
+
+## Usage:
+usage: slinked.sh [-l link_type] [-d] [-f] [-t] [-h] [-r]
+  -l link_type Set link_type as default type of linking instead of standard symlinking
+  -d debuging mode
+  -f force mode
+  -t testing mode
+  -r restore the origin files
+  -h print help
 
 @todo
 - global configuration for linking in one file
